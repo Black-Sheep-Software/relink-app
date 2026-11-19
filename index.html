@@ -36,7 +36,7 @@
         <div class="connection-list">
           <article><div><span class="connection-number">01</span><h3>USB</h3></div><p>A familiar wired connection, with controller input tested through ReLink on Linux.</p><span class="state">Tested on Linux</span></article>
           <article><div><span class="connection-number">02</span><h3>Bluetooth</h3></div><p>Connect wirelessly with a Bluetooth-enabled controller. Input and reconnection have been tested on Linux.</p><span class="state">Tested on Linux</span></article>
-          <article><div><span class="connection-number">03</span><h3>Native Wi-Fi</h3></div><p>We’re developing support for the controller’s original Wi-Fi connection, with early gameplay input demonstrated.</p><span class="state state-wip">In development</span></article>
+          <article><div><span class="connection-number">03</span><h3>Native Wi-Fi</h3></div><p>The controller’s original Wi-Fi connection has been tested with real input and rumble. Setup and reconnection are still being refined.</p><span class="state state-wip">In development</span></article>
         </div>
       </div>
     </section>
@@ -44,7 +44,11 @@
       <div class="section-label">App preview</div>
       <div class="preview-content">
         <div><p class="kicker">A look at ReLink Bridge</p><h2 id="preview-heading">Your controller, in one place.</h2><p>The early desktop app brings connection status, controller input testing and settings together. The interface is still changing as we develop and test it.</p></div>
-        <figure><img src="/bridge-dashboard.png" alt="Early ReLink Bridge dashboard showing controller and connection status" loading="lazy" width="760" height="820" /><figcaption>Development screenshot of the Linux app. Connection and service states shown are examples.</figcaption></figure>
+        <div class="screenshot-grid">
+          <figure><img src="/bridge-dashboard.png" alt="ReLink Bridge dashboard showing controller and connection status" loading="lazy" width="760" height="820" /><figcaption><strong>Controller dashboard</strong><br />See connection and service status at a glance.</figcaption></figure>
+          <figure><img src="/bridge-input.png" alt="ReLink Bridge input testing screen waiting for a virtual gamepad" loading="lazy" width="900" height="950" /><figcaption><strong>Test input</strong><br />Check the controls ReLink sends to games.</figcaption></figure>
+        </div>
+        <p class="screenshot-note">Development screenshots from Linux. The interface and connection states may change.</p>
       </div>
     </section>
     <section class="documentation section" id="documentation" aria-labelledby="documentation-heading">
@@ -53,14 +57,14 @@
         <div class="documentation-grid">
           <article><h3>What you’ll need</h3><p>A Stadia Controller and a Linux computer for the currently tested paths. USB and Bluetooth input have been tested; Windows support is still in development.</p></article>
           <article><h3>About native Wi-Fi</h3><p>Native Wi-Fi is experimental. The current Linux setup uses a separate, dedicated Wi-Fi adapter to create an isolated controller network.</p></article>
-          <article><h3>Follow the research</h3><p>Explore the source, technical notes and current progress in the project repository.</p><a href="https://github.com/Black-Sheep-Software/ReLink#readme">Read the project documentation</a></article>
+          <article><h3>Updates and support</h3><p>Find project updates and report a problem or suggest an improvement in our public repository.</p><a href="https://github.com/Black-Sheep-Software/relink-app/issues">Visit GitHub Issues</a></article>
         </div>
-        <p class="documentation-note">ReLink is not yet ready for general release. Setup and troubleshooting instructions will grow as testing continues.</p>
+        <p class="documentation-note">ReLink is not yet ready for general release. Installable downloads and fuller setup guides will follow as testing continues. Check the <a href="https://github.com/Black-Sheep-Software/relink-app/releases">releases page</a> for availability.</p>
       </div>
     </section>
     <section class="project-status section" id="status">
       <div class="section-label">03 &nbsp; / &nbsp; Project status</div>
-      <div class="status-content"><div><h2>Good progress.<br />More work to do.</h2><p>We’ve demonstrated controller input across all three connections on Linux, including an early native Wi-Fi test in a game.</p><p>We’re continuing to improve reliability and ease of use. Windows support is also in development. ReLink is not yet available as a finished product.</p></div><aside><p class="aside-label">THE AIM</p><blockquote>Keep good hardware useful.</blockquote><p>Local play. User control. Thoughtful design.</p></aside></div>
+      <div class="status-content"><div><h2>Good progress.<br />More work to do.</h2><p>We’ve demonstrated controller input across all three connections on Linux, including native Wi-Fi input in a game and a rumble test with a receiver under our control.</p><p>We’re continuing to improve setup and reliability, including native Wi-Fi reconnection. Windows support is in development, and installable releases are not available yet.</p></div><aside><p class="aside-label">THE AIM</p><blockquote>Keep good hardware useful.</blockquote><p>Local play. User control. Thoughtful design.</p></aside></div>
     </section>
     <section class="beta section" id="beta" aria-labelledby="beta-heading">
       <div class="section-label">04 &nbsp; / &nbsp; Beta testing</div>

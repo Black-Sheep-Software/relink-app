@@ -60,3 +60,12 @@ footer { display:flex; align-items:center; justify-content:space-between; flex-w
 .documentation-grid a { color:var(--teal); font-weight:700; text-underline-offset:4px; }
 .documentation-note { margin:24px 0 0; }
 @media(max-width:700px) { .preview-content, .documentation-grid { grid-template-columns:1fr; gap:20px; } }
+
+.preview-content { grid-template-columns:1fr; gap:24px; }
+.preview-content > div:first-child { max-width:660px; }
+.screenshot-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.screenshot-grid figure { min-width:0; }
+.screenshot-grid figcaption strong { color:var(--ink); font-size:16px; }
+.preview-content .screenshot-note { margin:0; color:var(--muted); font-size:14px; line-height:1.5; }
+.documentation-note a { color:var(--teal); font-weight:700; text-underline-offset:4px; }
+@media(max-width:600px) { .screenshot-grid { grid-template-columns:1fr; } }

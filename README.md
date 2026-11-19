@@ -7,7 +7,7 @@ dependable controller experience over USB cable, Bluetooth, and the
 controller's native Wi-Fi radio, so a controller that would otherwise be
 e-waste keeps working with the games on your computer.
 
-🔗 the live site — domain to be added here once confirmed
+🔗 **[Website](https://www.relink-app.co.uk)** — the ReLink website
 📦 **[Releases](https://github.com/Black-Sheep-Software/relink-app/releases)** — download the Bridge
 🐛 **[Issues](https://github.com/Black-Sheep-Software/relink-app/issues)** — bug reports and feature requests
 
@@ -25,12 +25,11 @@ and separate from in-progress engineering and hardware research.
 
 ## Status
 
-Early. USB and Bluetooth controller input work reliably. Native Wi-Fi — the
-controller's own wireless radio, with no cable or re-pairing dance once set
-up — is working end to end against real hardware and under active
-development. A Windows build is planned but not yet implemented. See the
+Early. USB and Bluetooth controller input have been tested on Linux. Native Wi-Fi — the
+controller's own wireless radio, has demonstrated input and rumble with real hardware and remains
+experimental, including reconnection. A Windows build is planned but not yet implemented. Installable releases are not available yet; check the
 [Releases](https://github.com/Black-Sheep-Software/relink-app/releases)
-page for what's actually downloadable today.
+page for future downloads.
 
 ## Reporting a problem
 
