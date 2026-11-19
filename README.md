@@ -1,49 +1,44 @@
+<div align="center">
+  <img src="relink-mark.svg" alt="ReLink logo" width="100" height="100">
+
 # ReLink
 
 **Your controller has more games to play.**
 
-ReLink is a Windows/Linux Bridge for the Google Stadia Controller — one
-dependable controller experience over USB cable, Bluetooth, and the
-controller's native Wi-Fi radio, so a controller that would otherwise be
-e-waste keeps working with the games on your computer.
+[![Project status: in development](https://img.shields.io/badge/status-in%20development-087d74)](https://www.relink-app.co.uk/#status)
+[![Linux: testing](https://img.shields.io/badge/Linux-testing-101827)](https://www.relink-app.co.uk/#status)
+[![Windows: planned](https://img.shields.io/badge/Windows-planned-526173)](https://www.relink-app.co.uk/#status)
 
-🔗 **[Website](https://www.relink-app.co.uk)** — the ReLink website
-📦 **[Releases](https://github.com/Black-Sheep-Software/relink-app/releases)** — download the Bridge
-🐛 **[Issues](https://github.com/Black-Sheep-Software/relink-app/issues)** — bug reports and feature requests
+[Website](https://www.relink-app.co.uk) · [Releases](https://github.com/Black-Sheep-Software/relink-app/releases) · [Report an issue](https://github.com/Black-Sheep-Software/relink-app/issues)
 
-## What this repo is
+</div>
 
-This repo holds ReLink's **public-facing website and release downloads**
-only. It does not contain the Bridge's source code, which is developed in a
-private repository — this keeps the public download/support surface small
-and separate from in-progress engineering and hardware research.
+ReLink is a controller companion in development for the Stadia Controller. It aims to help you play compatible games on your computer using USB, Bluetooth or the controller’s native Wi-Fi connection.
 
-- `index.html`, `styles.css`, `script.js`, and the image/SVG assets: the
-  live site's source.
-- Tagged [Releases](https://github.com/Black-Sheep-Software/relink-app/releases):
-  built, installable packages for end users.
+## Project status
 
-## Status
+ReLink is in early development and is not yet available as a finished product. Installable releases are not available yet.
 
-Early. USB and Bluetooth controller input have been tested on Linux. Native Wi-Fi — the
-controller's own wireless radio, has demonstrated input and rumble with real hardware and remains
-experimental, including reconnection. A Windows build is planned but not yet implemented. Installable releases are not available yet; check the
-[Releases](https://github.com/Black-Sheep-Software/relink-app/releases)
-page for future downloads.
+- **USB and Bluetooth:** controller input has been tested on Linux.
+- **Native Wi-Fi:** input and rumble have been demonstrated with a physical controller. Setup and reconnection are still being refined.
+- **Windows:** support is in development; an installable build is not yet available.
 
-## Reporting a problem
+Visit the [website](https://www.relink-app.co.uk) for the latest project information, or check [Releases](https://github.com/Black-Sheep-Software/relink-app/releases) for future downloads.
 
-Please use [Issues](https://github.com/Black-Sheep-Software/relink-app/issues)
-on this repo. Include your OS, how the controller is connected
-(USB/Bluetooth/Wi-Fi), and what you expected versus what happened.
+## Feedback and support
 
-## Developing the website locally
+Found a problem or have an idea? Open an [issue](https://github.com/Black-Sheep-Software/relink-app/issues). When reporting a problem, include your operating system, connection type, what you expected and what happened. Please leave out personal information and network credentials.
+
+## Website development
+
+To preview the website locally, run:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Open http://localhost:8000. Pushing to this repo's default branch does not
-automatically redeploy the live site unless Vercel's Git integration is
-connected directly to this repo (recommended, now that the site has its own
-repo) — see the project's Vercel dashboard.
+Then open http://localhost:8000.
+
+---
+
+ReLink is an independent project by Black Sheep Software and is not affiliated with Google.
