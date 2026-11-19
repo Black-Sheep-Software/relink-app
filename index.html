@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ReLink is developing new ways to use your Stadia Controller with games on your computer." />
+  <meta name="theme-color" content="#f3f3ef" />
+  <title>ReLink — Your controller has more games to play</title>
+  <link rel="icon" href="/relink-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="beta-banner"><div><span><strong>Help shape ReLink.</strong> Beta applications are coming soon.</span><a href="#beta">Explore beta testing <span aria-hidden="true">→</span></a></div></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ReLink home"><img src="/relink-mark.svg" alt="" width="35" height="35" /><span>ReLink</span></a>
+    <nav aria-label="Main navigation"><a href="#how-it-works">About ReLink</a><a href="#connections-heading">Connections</a><a href="#preview">App preview</a><a href="#documentation">Documentation</a><a href="#beta">Beta testing</a><a class="nav-link" href="#status">Project status <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">An independent project for Stadia Controllers</p>
+        <h1>Your controller has <span>more games to play.</span></h1>
+        <p class="hero-intro">ReLink is being developed to help you use your Stadia Controller with compatible games on your computer, with more ways to connect.</p>
+        <div class="actions"><a class="button" href="#how-it-works">Discover ReLink <span aria-hidden="true">↓</span></a><a class="inline-link" href="#status">Project status</a></div>
+      </div>
+      <figure class="hero-image"><img src="/stadia-controller-hero.webp" alt="Illustration of a white Stadia Controller" /><figcaption>Built for the controller you already own.</figcaption></figure>
+    </section>
+    <div class="status-bar"><span class="status-dot" aria-hidden="true"></span><p><strong>Currently in development.</strong> ReLink is at an early stage and is not yet ready for general release.</p><a href="#status">See project status <span aria-hidden="true">→</span></a></div>
+    <section class="explanation section" id="how-it-works">
+      <div class="section-label">01 &nbsp; / &nbsp; The idea</div>
+      <div class="explanation-body"><h2>A familiar controller.<br />A new connection.</h2><p class="large-copy">ReLink is a controller companion for your computer, designed to help your Stadia Controller work with compatible games.</p><p>Our goal is simple: give good hardware more life, with local play that doesn’t depend on a cloud account or subscription.</p></div>
+    </section>
+    <section class="connections section" aria-labelledby="connections-heading">
+      <div class="section-label">02 &nbsp; / &nbsp; Connections</div>
+      <div class="connections-body"><div class="section-intro"><h2 id="connections-heading">Three ways to connect.</h2><p>One bridge for the connection that suits your setup.</p></div>
+        <div class="connection-list">
+          <article><div><span class="connection-number">01</span><h3>USB</h3></div><p>A familiar wired connection, with controller input tested through ReLink on Linux.</p><span class="state">Tested on Linux</span></article>
+          <article><div><span class="connection-number">02</span><h3>Bluetooth</h3></div><p>Connect wirelessly with a Bluetooth-enabled controller. Input and reconnection have been tested on Linux.</p><span class="state">Tested on Linux</span></article>
+          <article><div><span class="connection-number">03</span><h3>Native Wi-Fi</h3></div><p>We’re developing support for the controller’s original Wi-Fi connection, with early gameplay input demonstrated.</p><span class="state state-wip">In development</span></article>
+        </div>
+      </div>
+    </section>
+    <section class="preview section" id="preview" aria-labelledby="preview-heading">
+      <div class="section-label">App preview</div>
+      <div class="preview-content">
+        <div><p class="kicker">A look at ReLink Bridge</p><h2 id="preview-heading">Your controller, in one place.</h2><p>The early desktop app brings connection status, controller input testing and settings together. The interface is still changing as we develop and test it.</p></div>
+        <figure><img src="/bridge-dashboard.png" alt="Early ReLink Bridge dashboard showing controller and connection status" loading="lazy" width="760" height="820" /><figcaption>Development screenshot of the Linux app. Connection and service states shown are examples.</figcaption></figure>
+      </div>
+    </section>
+    <section class="documentation section" id="documentation" aria-labelledby="documentation-heading">
+      <div class="section-label">Documentation</div>
+      <div><div class="section-intro"><h2 id="documentation-heading">Getting to know ReLink.</h2><p>A starting point while the software and setup guides are still evolving.</p></div>
+        <div class="documentation-grid">
+          <article><h3>What you’ll need</h3><p>A Stadia Controller and a Linux computer for the currently tested paths. USB and Bluetooth input have been tested; Windows support is still in development.</p></article>
+          <article><h3>About native Wi-Fi</h3><p>Native Wi-Fi is experimental. The current Linux setup uses a separate, dedicated Wi-Fi adapter to create an isolated controller network.</p></article>
+          <article><h3>Follow the research</h3><p>Explore the source, technical notes and current progress in the project repository.</p><a href="https://github.com/Black-Sheep-Software/ReLink#readme">Read the project documentation</a></article>
+        </div>
+        <p class="documentation-note">ReLink is not yet ready for general release. Setup and troubleshooting instructions will grow as testing continues.</p>
+      </div>
+    </section>
+    <section class="project-status section" id="status">
+      <div class="section-label">03 &nbsp; / &nbsp; Project status</div>
+      <div class="status-content"><div><h2>Good progress.<br />More work to do.</h2><p>We’ve demonstrated controller input across all three connections on Linux, including an early native Wi-Fi test in a game.</p><p>We’re continuing to improve reliability and ease of use. Windows support is also in development. ReLink is not yet available as a finished product.</p></div><aside><p class="aside-label">THE AIM</p><blockquote>Keep good hardware useful.</blockquote><p>Local play. User control. Thoughtful design.</p></aside></div>
+    </section>
+    <section class="beta section" id="beta" aria-labelledby="beta-heading">
+      <div class="section-label">04 &nbsp; / &nbsp; Beta testing</div>
+      <div class="beta-content">
+        <div><p class="kicker">Help shape ReLink</p><h2 id="beta-heading">Better together.</h2><p class="beta-intro">We’re planning a beta programme for people who want to help us make ReLink better with real-world feedback.</p><p>Testers will help us understand what works, what doesn’t and where the experience needs to be simpler.</p><p class="beta-notice"><strong>Applications are not open yet.</strong> We’ll share how to register when the programme is ready.</p></div>
+        <aside class="beta-details"><h3>What to expect</h3><ul><li>Early software that is still being developed</li><li>A Stadia Controller and a compatible computer</li><li>Feedback on setup, connections and gameplay</li></ul><p>Early testing is expected to focus on Linux. Windows support remains in development.</p></aside>
+        <div class="beta-form-preview" aria-labelledby="beta-form-heading">
+          <div><h3 id="beta-form-heading">Beta application</h3><p>Applications are not open yet. This is a preview of the information we plan to ask for.</p></div>
+          <form>
+            <fieldset disabled>
+              <div class="form-grid">
+                <label for="beta-name">Name <input id="beta-name" name="name" type="text" autocomplete="name" /></label>
+                <label for="beta-email">Email address <input id="beta-email" name="email" type="email" autocomplete="email" /></label>
+                <label for="beta-platform">Computer operating system <select id="beta-platform" name="platform"><option value="">Select an option</option><option>Linux</option><option>Windows</option><option>Other</option></select></label>
+                <label for="beta-connection">Connection you’d like to test <select id="beta-connection" name="connection"><option value="">Select an option</option><option>USB</option><option>Bluetooth</option><option>Native Wi-Fi</option><option>More than one</option></select></label>
+              </div>
+              <button class="button" type="submit">Applications not open</button>
+            </fieldset>
+          </form>
+          <p class="form-note">This preview does not collect or send information. We’ll explain how application details are used before registration opens.</p>
+        </div>
+      </div>
+    </section>
+    <section class="closing"><div><p class="kicker">Built by Black Sheep Software</p><h2>More to come.</h2><p>We’re building ReLink with care. Check back as the project develops.</p></div><a class="button" href="#top">Back to top <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer><a class="brand" href="#top"><img src="/relink-mark.svg" alt="" width="28" height="28" /><span>ReLink</span></a><p>An independent project. Not affiliated with Google.</p><p>Black Sheep Software · <span id="year"></span></p></footer>
+  <script src="/script.js"></script>
+</body>
+</html>

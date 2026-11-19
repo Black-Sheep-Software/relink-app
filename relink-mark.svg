@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">ReLink convergence mark</title>
+  <desc id="desc">Three connection paths converge into one output.</desc>
+  <path d="M11 54V48C11 39 18 38 23 34C29 29 30 24 30 18" fill="none" stroke="#20C6B7" stroke-width="9" stroke-linecap="round"/>
+  <path d="M53 54V48C53 39 46 38 41 34C35 29 34 24 34 18" fill="none" stroke="#F3A712" stroke-width="9" stroke-linecap="round"/>
+  <path d="M32 54V10" fill="none" stroke="#101827" stroke-width="9" stroke-linecap="round"/>
+</svg>

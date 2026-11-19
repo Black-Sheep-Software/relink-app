@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310" role="img" aria-labelledby="title desc">
+  <title id="title">Controller illustration</title>
+  <desc id="desc">An original illustration of a white game controller with dark controls and teal accents.</desc>
+  <path d="M137 67c-38 4-62 29-77 71L29 226c-9 26 3 52 25 55 19 3 34-12 52-34l38-46h272l38 46c18 22 33 37 52 34 22-3 34-29 25-55l-31-88c-15-42-39-67-77-71-34-4-63 9-88 9H225c-25 0-54-13-88-9Z" fill="#e9eff2" stroke="#b6c6d1" stroke-width="4"/>
+  <path d="M154 93v24h-24v22h24v24h22v-24h24v-22h-24V93Z" fill="#243341"/>
+  <circle cx="218" cy="171" r="35" fill="#c8d7dc"/><circle cx="218" cy="167" r="29" fill="#21323f"/><circle cx="218" cy="167" r="21" fill="#344b57"/>
+  <circle cx="342" cy="171" r="35" fill="#c8d7dc"/><circle cx="342" cy="167" r="29" fill="#21323f"/><circle cx="342" cy="167" r="21" fill="#344b57"/>
+  <g fill="#243341"><circle cx="402" cy="99" r="14"/><circle cx="431" cy="127" r="14"/><circle cx="373" cy="127" r="14"/><circle cx="402" cy="155" r="14"/><rect x="228" y="103" width="22" height="10" rx="5"/><rect x="310" y="103" width="22" height="10" rx="5"/></g>
+  <circle cx="280" cy="125" r="16" fill="#20c6b7"/><circle cx="280" cy="125" r="7" fill="#101827"/>
+</svg>
