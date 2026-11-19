@@ -29,16 +29,6 @@ Visit the [website](https://www.relink-app.co.uk) for the latest project informa
 
 Found a problem or have an idea? Open an [issue](https://github.com/Black-Sheep-Software/relink-app/issues). When reporting a problem, include your operating system, connection type, what you expected and what happened. Please leave out personal information and network credentials.
 
-## Website development
-
-To preview the website locally, run:
-
-```sh
-python3 -m http.server 8000
-```
-
-Then open http://localhost:8000.
-
 ---
 
 ReLink is an independent project by Black Sheep Software and is not affiliated with Google.
