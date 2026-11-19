@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a problem with ReLink
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please check existing issues first and leave out personal information, controller identifiers and network credentials.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: Describe the steps that lead to the problem.
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system and version
+      placeholder: e.g. Ubuntu 24.04
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Controller connection
+      options:
+        - USB
+        - Bluetooth
+        - Native Wi-Fi
+        - Other or unsure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: ReLink version, if known
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+      description: Add screenshots or relevant error messages, removing private information first.

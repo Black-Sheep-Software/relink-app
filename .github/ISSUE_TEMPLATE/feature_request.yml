@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an improvement to ReLink
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the need or problem behind your idea.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion
+      description: Tell us how ReLink could help.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any examples or screenshots that help explain the idea. Please leave out personal information.
