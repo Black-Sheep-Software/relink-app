@@ -17,6 +17,16 @@ The Bluetooth firmware is a different controller mode; the Wi-Fi receiver requir
 - **Existing clients:** use **Connection options → Check for updates** while connected to the Pi. The Windows update uses the app-only package and has been tested. The Linux update button is present but its complete update-and-restart flow still needs a real-world test.
 - **Pi source archive, Windows app-only update, manifest and signature:** these are update-system assets, not stand-alone setup packages. The Pi stages signed updates and makes matching client updates available after successful activation.
 
+For example, to start the Build 4 Linux AppImage from a terminal after downloading it, use the actual downloaded filename if it differs:
+
+```sh
+cd ~/Downloads
+chmod +x ./ReLink-Linux-build-4.AppImage
+./ReLink-Linux-build-4.AppImage --appimage-extract-and-run
+```
+
+This runs the preview; it does not install or configure the Pi receiver. The extraction option avoids depending on AppImage FUSE support. Desktop integration and automatic startup are not established for every distribution.
+
 ## Pair and assign a controller
 
 1. Open the Pi's authenticated dashboard and create a pairing code under **Computers**. Treat the code as a secret.
