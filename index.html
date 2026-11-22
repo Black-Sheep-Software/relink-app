@@ -20,7 +20,7 @@
       <div class="hero-copy">
         <p class="kicker">An independent project for Stadia Controllers</p>
         <h1>Your controller has <span>more games to play.</span></h1>
-        <p class="hero-intro">ReLink is being developed to help you use your Stadia Controller with compatible games on your computer, with more ways to connect.</p>
+        <p class="hero-intro">ReLink is being developed to help you use your Stadia Controller with compatible games. Our Wi-Fi preview connects through a Raspberry Pi to Windows and Linux computers.</p>
         <div class="actions"><a class="button" href="#how-it-works">Discover ReLink <span aria-hidden="true">↓</span></a><a class="inline-link" href="#status">Project status</a></div>
       </div>
       <figure class="hero-image"><img src="/stadia-controller-hero.webp" alt="Illustration of a white Stadia Controller" /><figcaption>Built for the controller you already own.</figcaption></figure>
@@ -36,41 +36,41 @@
         <div class="connection-list">
           <article><div><span class="connection-number">01</span><h3>USB</h3></div><p>A familiar wired connection, with controller input tested through ReLink on Linux.</p><span class="state">Tested on Linux</span></article>
           <article><div><span class="connection-number">02</span><h3>Bluetooth</h3></div><p>Connect wirelessly with a Bluetooth-enabled controller. Input and reconnection have been tested on Linux.</p><span class="state">Tested on Linux</span></article>
-          <article><div><span class="connection-number">03</span><h3>Native Wi-Fi</h3></div><p>The controller’s original Wi-Fi connection has been tested with real input and rumble. Setup and reconnection are still being refined.</p><span class="state state-wip">In development</span></article>
+          <article><div><span class="connection-number">03</span><h3>Native Wi-Fi</h3></div><p>Connect controllers through a ReLink Pi receiver. Real input, rumble and two controllers on separate computers have been tested; setup and reconnection are still being refined.</p><span class="state state-wip">In development</span></article>
         </div>
       </div>
     </section>
     <section class="preview section" id="preview" aria-labelledby="preview-heading">
       <div class="section-label">App preview</div>
       <div class="preview-content">
-        <div><p class="kicker">A look at ReLink Bridge</p><h2 id="preview-heading">Your controller, in one place.</h2><p>The early desktop app brings connection status, controller input testing and settings together. The interface is still changing as we develop and test it.</p></div>
+        <div><p class="kicker">A look at ReLink Bridge</p><h2 id="preview-heading">Your controller, in one place.</h2><p>Our Windows and Linux companion previews bring receiver, controller and battery status together. The interface is still changing as we develop and test it.</p></div>
         <div class="screenshot-grid">
           <figure><img src="/bridge-dashboard.png" alt="ReLink Bridge dashboard showing controller and connection status" loading="lazy" width="760" height="820" /><figcaption><strong>Controller dashboard</strong><br />See connection and service status at a glance.</figcaption></figure>
           <figure><img src="/bridge-input.png" alt="ReLink Bridge input testing screen waiting for a virtual gamepad" loading="lazy" width="900" height="950" /><figcaption><strong>Test input</strong><br />Check the controls ReLink sends to games.</figcaption></figure>
         </div>
-        <p class="screenshot-note">Development screenshots from Linux. The interface and connection states may change.</p>
+        <p class="screenshot-note">Earlier Linux development screenshots. The current companion interface and connection states differ.</p>
       </div>
     </section>
     <section class="documentation section" id="documentation" aria-labelledby="documentation-heading">
       <div class="section-label">Documentation</div>
       <div><div class="section-intro"><h2 id="documentation-heading">Getting to know ReLink.</h2><p>A starting point while the software and setup guides are still evolving.</p></div>
         <div class="documentation-grid">
-          <article><h3>What you’ll need</h3><p>A Stadia Controller and a Linux computer for the currently tested paths. USB and Bluetooth input have been tested; Windows support is still in development.</p></article>
-          <article><h3>About native Wi-Fi</h3><p>Native Wi-Fi is experimental. The current Linux setup uses a separate, dedicated Wi-Fi adapter to create an isolated controller network.</p></article>
+          <article><h3>What you’ll need</h3><p>The current Wi-Fi preview needs a Stadia Controller with Wi-Fi firmware, a configured ReLink Pi receiver and a Windows or Linux computer.</p><a href="https://github.com/Black-Sheep-Software/relink-app/blob/main/GETTING_STARTED.md">Read the preview guide</a></article>
+          <article><h3>About native Wi-Fi</h3><p>The experimental Pi receiver creates a separate controller network and routes input to paired computers. A complete supported Pi setup guide is still in development.</p></article>
           <article><h3>Updates and support</h3><p>Find project updates and report a problem or suggest an improvement in our public repository.</p><a href="https://github.com/Black-Sheep-Software/relink-app/issues">Visit GitHub Issues</a></article>
         </div>
-        <p class="documentation-note">ReLink is not yet ready for general release. Installable downloads and fuller setup guides will follow as testing continues. Check the <a href="https://github.com/Black-Sheep-Software/relink-app/releases">releases page</a> for availability.</p>
+        <p class="documentation-note">ReLink is not yet ready for general release. <a href="https://github.com/Black-Sheep-Software/relink-app/releases/latest">Development downloads</a> are available for testing with an existing ReLink receiver; fuller setup guides are still in development.</p>
       </div>
     </section>
     <section class="project-status section" id="status">
       <div class="section-label">03 &nbsp; / &nbsp; Project status</div>
-      <div class="status-content"><div><h2>Good progress.<br />More work to do.</h2><p>We’ve demonstrated controller input across all three connections on Linux, including native Wi-Fi input in a game and a rumble test with a receiver under our control.</p><p>We’re continuing to improve setup and reliability, including native Wi-Fi reconnection. Windows support is in development, and installable releases are not available yet.</p></div><aside><p class="aside-label">THE AIM</p><blockquote>Keep good hardware useful.</blockquote><p>Local play. User control. Thoughtful design.</p></aside></div>
+      <div class="status-content"><div><h2>Good progress.<br />More work to do.</h2><p>We’ve tested Wi-Fi controller input with Windows and Linux clients, including two controllers playing on separate computers through one Pi. Earlier Linux work also tested USB and Bluetooth input.</p><p>Development downloads are available for existing Pi receiver setups. We’re continuing to improve setup, reliability and updates; headset audio and microphone support are in development.</p></div><aside><p class="aside-label">THE AIM</p><blockquote>Keep good hardware useful.</blockquote><p>Local play. User control. Thoughtful design.</p></aside></div>
     </section>
     <section class="beta section" id="beta" aria-labelledby="beta-heading">
       <div class="section-label">04 &nbsp; / &nbsp; Beta testing</div>
       <div class="beta-content">
         <div><p class="kicker">Help shape ReLink</p><h2 id="beta-heading">Better together.</h2><p class="beta-intro">We’re planning a beta programme for people who want to help us make ReLink better with real-world feedback.</p><p>Testers will help us understand what works, what doesn’t and where the experience needs to be simpler.</p><p class="beta-notice"><strong>Applications are not open yet.</strong> We’ll share how to register when the programme is ready.</p></div>
-        <aside class="beta-details"><h3>What to expect</h3><ul><li>Early software that is still being developed</li><li>A Stadia Controller and a compatible computer</li><li>Feedback on setup, connections and gameplay</li></ul><p>Early testing is expected to focus on Linux. Windows support remains in development.</p></aside>
+        <aside class="beta-details"><h3>What to expect</h3><ul><li>Early software that is still being developed</li><li>A Stadia Controller and a compatible computer</li><li>Feedback on setup, connections and gameplay</li></ul><p>The Windows and Linux companion apps are both in development and being tested.</p></aside>
         <div class="beta-form-preview" aria-labelledby="beta-form-heading">
           <div><h3 id="beta-form-heading">Beta application</h3><p>Applications are not open yet. This is a preview of the information we plan to ask for.</p></div>
           <form>
