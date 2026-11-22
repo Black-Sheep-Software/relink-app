@@ -3,94 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ReLink is developing new ways to use your Stadia Controller with games on your computer." />
-  <meta name="theme-color" content="#f3f3ef" />
+  <meta name="description" content="ReLink connects Stadia Controllers to Windows and Linux through a Raspberry Pi receiver. Explore the development preview." />
+  <meta name="theme-color" content="#0b1722" />
   <title>ReLink — Your controller has more games to play</title>
   <link rel="icon" href="/relink-mark.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="beta-banner"><div><span><strong>Help shape ReLink.</strong> Beta applications are coming soon.</span><a href="#beta">Explore beta testing <span aria-hidden="true">→</span></a></div></div>
+  <div class="announcement"><div><span class="announcement-dot" aria-hidden="true"></span><strong>Development preview</strong><span>ReLink is taking shape. Follow our progress.</span><a href="#status">See what's working <span aria-hidden="true">↗</span></a></div></div>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="ReLink home"><img src="/relink-mark.svg" alt="" width="35" height="35" /><span>ReLink</span></a>
-    <nav aria-label="Main navigation"><a href="#how-it-works">About ReLink</a><a href="#connections-heading">Connections</a><a href="#preview">App preview</a><a href="#documentation">Documentation</a><a href="#beta">Beta testing</a><a href="https://github.com/Black-Sheep-Software/relink-app">GitHub</a><a class="nav-link" href="#status">Project status <span aria-hidden="true">↗</span></a></nav>
+    <a class="brand" href="#top" aria-label="ReLink home"><img src="/relink-mark.svg" alt="" width="36" height="36" /><span>ReLink</span></a>
+    <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#preview">The app</a><a href="#status">Project status</a><a href="#documentation">Get started</a><a class="nav-cta" href="https://github.com/Black-Sheep-Software/relink-app/releases/latest">Preview downloads <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main id="top">
     <section class="hero">
-      <div class="hero-copy">
-        <p class="kicker">An independent project for Stadia Controllers</p>
-        <h1>Your controller has <span>more games to play.</span></h1>
-        <p class="hero-intro">ReLink is being developed to help you use your Stadia Controller with compatible games. Our Wi-Fi preview connects through a Raspberry Pi to Windows and Linux computers.</p>
-        <div class="actions"><a class="button" href="#how-it-works">Discover ReLink <span aria-hidden="true">↓</span></a><a class="inline-link" href="#status">Project status</a></div>
-      </div>
-      <figure class="hero-image"><img src="/stadia-controller-hero.webp" alt="Illustration of a white Stadia Controller" /><figcaption>Built for the controller you already own.</figcaption></figure>
+      <div class="hero-copy"><p class="eyebrow"><span aria-hidden="true"></span> BUILT FOR STADIA CONTROLLERS</p><h1>Your controller has <em>more games to play.</em></h1><p class="hero-intro">Give the controller you already love a new connection to your games. ReLink brings its original Wi-Fi connection to Windows and Linux through a Raspberry Pi.</p><div class="actions"><a class="button button-dark" href="#how-it-works">Meet ReLink <span aria-hidden="true">↘</span></a><a class="text-link" href="https://github.com/Black-Sheep-Software/relink-app/releases/latest">View development builds <span aria-hidden="true">↗</span></a></div><p class="hero-note">An independent project by Black Sheep Software.</p></div>
+      <figure class="hero-image"><img src="/stadia-controller-hero.webp" alt="Illustration of a Stadia Controller" width="1672" height="941" /><figcaption><span class="hero-image-dot"></span> A LITTLE MORE LIFE FOR GOOD HARDWARE</figcaption></figure>
     </section>
-    <div class="status-bar"><span class="status-dot" aria-hidden="true"></span><p><strong>Currently in development.</strong> ReLink is at an early stage and is not yet ready for general release.</p><a href="#status">See project status <span aria-hidden="true">→</span></a></div>
-    <section class="explanation section" id="how-it-works">
-      <div class="section-label">01 &nbsp; / &nbsp; The idea</div>
-      <div class="explanation-body"><h2>A familiar controller.<br />A new connection.</h2><p class="large-copy">ReLink is a controller companion for your computer, designed to help your Stadia Controller work with compatible games.</p><p>Our goal is simple: give good hardware more life, with local play that doesn’t depend on a cloud account or subscription.</p></div>
-    </section>
-    <section class="connections section" aria-labelledby="connections-heading">
-      <div class="section-label">02 &nbsp; / &nbsp; Connections</div>
-      <div class="connections-body"><div class="section-intro"><h2 id="connections-heading">Three ways to connect.</h2><p>One bridge for the connection that suits your setup.</p></div>
-        <div class="connection-list">
-          <article><div><span class="connection-number">01</span><h3>USB</h3></div><p>A familiar wired connection, with controller input tested through ReLink on Linux.</p><span class="state">Tested on Linux</span></article>
-          <article><div><span class="connection-number">02</span><h3>Bluetooth</h3></div><p>Connect wirelessly with a Bluetooth-enabled controller. Input and reconnection have been tested on Linux.</p><span class="state">Tested on Linux</span></article>
-          <article><div><span class="connection-number">03</span><h3>Native Wi-Fi</h3></div><p>Connect controllers through a ReLink Pi receiver. Real input, rumble and two controllers on separate computers have been tested; setup and reconnection are still being refined.</p><span class="state state-wip">In development</span></article>
-        </div>
-      </div>
-    </section>
-    <section class="preview section" id="preview" aria-labelledby="preview-heading">
-      <div class="section-label">App preview</div>
-      <div class="preview-content">
-        <div><p class="kicker">A look at ReLink Bridge</p><h2 id="preview-heading">Your controller, in one place.</h2><p>Our Windows and Linux companion previews bring receiver, controller and battery status together. The interface is still changing as we develop and test it.</p></div>
-        <div class="screenshot-grid">
-          <figure><img src="/bridge-dashboard.png" alt="ReLink Bridge dashboard showing controller and connection status" loading="lazy" width="760" height="820" /><figcaption><strong>Controller dashboard</strong><br />See connection and service status at a glance.</figcaption></figure>
-          <figure><img src="/bridge-input.png" alt="ReLink Bridge input testing screen waiting for a virtual gamepad" loading="lazy" width="900" height="950" /><figcaption><strong>Test input</strong><br />Check the controls ReLink sends to games.</figcaption></figure>
-        </div>
-        <p class="screenshot-note">Earlier Linux development screenshots. The current companion interface and connection states differ.</p>
-      </div>
-    </section>
-    <section class="documentation section" id="documentation" aria-labelledby="documentation-heading">
-      <div class="section-label">Documentation</div>
-      <div><div class="section-intro"><h2 id="documentation-heading">Getting to know ReLink.</h2><p>A starting point while the software and setup guides are still evolving.</p></div>
-        <div class="documentation-grid">
-          <article><h3>What you’ll need</h3><p>The current Wi-Fi preview needs a Stadia Controller with Wi-Fi firmware, a configured ReLink Pi receiver and a Windows or Linux computer.</p><a href="https://github.com/Black-Sheep-Software/relink-app/blob/main/GETTING_STARTED.md">Read the preview guide</a></article>
-          <article><h3>About native Wi-Fi</h3><p>The experimental Pi receiver creates a separate controller network and routes input to paired computers. A complete supported Pi setup guide is still in development.</p></article>
-          <article><h3>Updates and support</h3><p>Find project updates and report a problem or suggest an improvement in our public repository.</p><a href="https://github.com/Black-Sheep-Software/relink-app/issues">Visit GitHub Issues</a></article>
-        </div>
-        <p class="documentation-note">ReLink is not yet ready for general release. <a href="https://github.com/Black-Sheep-Software/relink-app/releases/latest">Development downloads</a> are available for testing with an existing ReLink receiver; fuller setup guides are still in development.</p>
-      </div>
-    </section>
-    <section class="project-status section" id="status">
-      <div class="section-label">03 &nbsp; / &nbsp; Project status</div>
-      <div class="status-content"><div><h2>Good progress.<br />More work to do.</h2><p>We’ve tested Wi-Fi controller input with Windows and Linux clients, including two controllers playing on separate computers through one Pi. Earlier Linux work also tested USB and Bluetooth input.</p><p>Development downloads are available for existing Pi receiver setups. We’re continuing to improve setup, reliability and updates; headset audio and microphone support are in development.</p></div><aside><p class="aside-label">THE AIM</p><blockquote>Keep good hardware useful.</blockquote><p>Local play. User control. Thoughtful design.</p></aside></div>
-    </section>
-    <section class="beta section" id="beta" aria-labelledby="beta-heading">
-      <div class="section-label">04 &nbsp; / &nbsp; Beta testing</div>
-      <div class="beta-content">
-        <div><p class="kicker">Help shape ReLink</p><h2 id="beta-heading">Better together.</h2><p class="beta-intro">We’re planning a beta programme for people who want to help us make ReLink better with real-world feedback.</p><p>Testers will help us understand what works, what doesn’t and where the experience needs to be simpler.</p><p class="beta-notice"><strong>Applications are not open yet.</strong> We’ll share how to register when the programme is ready.</p></div>
-        <aside class="beta-details"><h3>What to expect</h3><ul><li>Early software that is still being developed</li><li>A Stadia Controller and a compatible computer</li><li>Feedback on setup, connections and gameplay</li></ul><p>The Windows and Linux companion apps are both in development and being tested.</p></aside>
-        <div class="beta-form-preview" aria-labelledby="beta-form-heading">
-          <div><h3 id="beta-form-heading">Beta application</h3><p>Applications are not open yet. This is a preview of the information we plan to ask for.</p></div>
-          <form>
-            <fieldset disabled>
-              <div class="form-grid">
-                <label for="beta-name">Name <input id="beta-name" name="name" type="text" autocomplete="name" /></label>
-                <label for="beta-email">Email address <input id="beta-email" name="email" type="email" autocomplete="email" /></label>
-                <label for="beta-platform">Computer operating system <select id="beta-platform" name="platform"><option value="">Select an option</option><option>Linux</option><option>Windows</option><option>Other</option></select></label>
-                <label for="beta-connection">Connection you’d like to test <select id="beta-connection" name="connection"><option value="">Select an option</option><option>USB</option><option>Bluetooth</option><option>Native Wi-Fi</option><option>More than one</option></select></label>
-              </div>
-              <button class="button" type="submit">Applications not open</button>
-            </fieldset>
-          </form>
-          <p class="form-note">This preview does not collect or send information. We’ll explain how application details are used before registration opens.</p>
-        </div>
-      </div>
-    </section>
-    <section class="closing"><div><p class="kicker">Built by Black Sheep Software</p><h2>More to come.</h2><p>We’re building ReLink with care. Check back as the project develops.</p></div><a class="button" href="#top">Back to top <span aria-hidden="true">↑</span></a></section>
+    <div class="preview-notice"><span class="notice-icon" aria-hidden="true">✦</span><p><strong>Built in the open, still in development.</strong> Preview downloads are available for existing ReLink Pi receiver setups.</p><a href="#status">What to expect <span aria-hidden="true">→</span></a></div>
+    <section class="section how" id="how-it-works"><div class="section-heading"><p class="eyebrow"><span aria-hidden="true"></span> THE IDEA</p><h2>A familiar controller.<br /><em>A new connection.</em></h2><p>ReLink is designed around the controller in your hands, with local play and an experience that stays out of your way.</p></div><div class="steps"><article><span class="step-no">01 / CONNECT</span><h3>Power on your controller.</h3><p>Use a Stadia Controller with its original Wi-Fi firmware and a configured ReLink receiver.</p></article><article><span class="step-no">02 / PAIR</span><h3>Choose your computer.</h3><p>Pair Windows or Linux with the Pi, then choose where each connected controller goes.</p></article><article><span class="step-no">03 / PLAY</span><h3>Get back to your games.</h3><p>ReLink sends controller input to your computer while the companion keeps you in the know.</p></article></div></section>
+    <section class="app-section" id="preview"><div class="app-inner"><div class="app-heading"><div><p class="eyebrow"><span aria-hidden="true"></span> YOUR COMPANION</p><h2>Ready when<br /><em>you are.</em></h2></div><div><p>See your receiver, controller and battery at a glance. When you need a closer look, the full companion and Pi dashboard are a click away.</p><div class="platforms"><span>WINDOWS</span><span>LINUX</span><span>RASPBERRY PI</span></div></div></div><div class="showcase"><figure class="app-shot"><img src="/relink-companion-preview.png" alt="ReLink companion preview showing a connected receiver, controller and battery" width="1020" height="720" loading="lazy" /><figcaption>THE COMPANION <span>Connection and controller status</span></figcaption></figure><figure class="quick-shot"><div class="quick-frame"><img src="/relink-quick-status-preview.png" alt="ReLink quick status panel showing receiver, controller and battery information" width="300" height="196" loading="lazy" /></div><figcaption>QUICK STATUS <span>The essentials, close at hand</span></figcaption></figure></div><p class="capture-note">Development preview interfaces with example status values. Appearance and features may change.</p></div></section>
+    <section class="section features" id="connections"><div class="section-heading"><p class="eyebrow"><span aria-hidden="true"></span> MADE FOR PLAY</p><h2>More ways to<br /><em>make it yours.</em></h2><p>From one controller and one computer to a shared setup, ReLink is being built to fit the way you play.</p></div><div class="feature-grid"><article><span class="feature-icon" aria-hidden="true">↗</span><h3>Multiple controllers</h3><p>Two Wi-Fi controllers have been tested playing on separate computers through the same Pi. Choose assignments in the receiver dashboard.</p><span class="feature-label">TESTED IN PREVIEW</span></article><article><span class="feature-icon" aria-hidden="true">◎</span><h3>At-a-glance status</h3><p>Check your receiver connection and controller battery, or open a compact status panel from the system tray.</p><span class="feature-label">WINDOWS + LINUX</span></article><article><span class="feature-icon" aria-hidden="true">↓</span><h3>Updates through your Pi</h3><p>The receiver checks for verified releases and makes matching updates available to paired clients. More update testing is underway.</p><span class="feature-label">IN DEVELOPMENT</span></article></div></section>
+    <section class="status-section" id="status"><div class="status-inner"><div><p class="eyebrow"><span aria-hidden="true"></span> WHERE WE ARE</p><h2>Good progress.<br /><em>More to come.</em></h2><p>ReLink is a development preview, not yet a finished general release. We’re improving setup, controller identification and reliability as we test on real hardware.</p><a class="button button-light" href="https://github.com/Black-Sheep-Software/relink-app">Follow development <span aria-hidden="true">↗</span></a></div><div class="status-list"><div><span class="status-indicator"></span><p><strong>Wi-Fi input</strong><small>Tested with a ReLink Pi receiver</small></p><span>IN TESTING</span></div><div><span class="status-indicator"></span><p><strong>Windows + Linux</strong><small>Companion previews available</small></p><span>IN TESTING</span></div><div><span class="status-indicator amber"></span><p><strong>Audio + microphone</strong><small>Still being developed</small></p><span>IN PROGRESS</span></div><div><span class="status-indicator amber"></span><p><strong>Pi setup + updates</strong><small>More testing and guidance needed</small></p><span>IN PROGRESS</span></div></div></div></section>
+    <section class="section getting-started" id="documentation"><div class="section-heading"><p class="eyebrow"><span aria-hidden="true"></span> GETTING STARTED</p><h2>Curious? <em>Start here.</em></h2><p>Preview packages are for people with an existing configured ReLink Pi receiver. A complete supported Pi setup guide is still in development.</p></div><div class="resource-grid"><a href="https://github.com/Black-Sheep-Software/relink-app/blob/main/GETTING_STARTED.md"><span>01 / PREVIEW GUIDE</span><strong>What you’ll need</strong><p>Understand the current setup and how to pair a computer.</p><b aria-hidden="true">↗</b></a><a href="https://github.com/Black-Sheep-Software/relink-app/releases/latest"><span>02 / DOWNLOADS</span><strong>Development builds</strong><p>Find the Windows and Linux previews and release notes.</p><b aria-hidden="true">↗</b></a><a href="https://github.com/Black-Sheep-Software/relink-app/issues"><span>03 / FEEDBACK</span><strong>Help us improve</strong><p>Share an issue or idea as ReLink takes shape.</p><b aria-hidden="true">↗</b></a></div></section>
+    <section class="closing"><div><p class="eyebrow"><span aria-hidden="true"></span> BUILT BY BLACK SHEEP SOFTWARE</p><h2>Good hardware.<br /><em>More possibilities.</em></h2><p>We’re building ReLink with care. Come along for the journey.</p></div><a class="button button-dark" href="https://github.com/Black-Sheep-Software/relink-app">Find us on GitHub <span aria-hidden="true">↗</span></a></section>
   </main>
-  <footer><a class="brand" href="#top"><img src="/relink-mark.svg" alt="" width="28" height="28" /><span>ReLink</span></a><p>An independent project. Not affiliated with Google.</p><a href="https://github.com/Black-Sheep-Software/relink-app">GitHub</a><p>Black Sheep Software · <span id="year"></span></p></footer>
+  <footer><a class="brand" href="#top"><img src="/relink-mark.svg" alt="" width="30" height="30" /><span>ReLink</span></a><p>Independent and not affiliated with Google.</p><div><a href="https://github.com/Black-Sheep-Software/relink-app">GitHub</a><span>Black Sheep Software · <span id="year"></span></span></div></footer>
   <script src="/script.js"></script>
 </body>
 </html>
