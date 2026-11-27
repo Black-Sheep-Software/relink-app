@@ -19,11 +19,12 @@ ReLink is an independent project by Black Sheep Software, giving Stadia Controll
 
 ReLink is still being built and tested; it is not a finished general release. The [latest release](https://github.com/Black-Sheep-Software/relink-app/releases/latest) contains development packages for testing with an existing ReLink Pi receiver. A complete, supported Pi installation guide is not yet available.
 
-- **Native Wi-Fi:** real controller input and rumble have been demonstrated with a ReLink-controlled receiver. Two Wi-Fi controllers have been used to play on separate computers through one Pi. Setup, routing and reconnection are still being improved.
+- **Native Wi-Fi:** real controller input and rumble have been demonstrated with a ReLink-controlled receiver. Multiple Wi-Fi controllers can be connected at once and assigned to separate computers through the receiver dashboard; reconnection after a restart or update is still occasionally slower than expected.
 - **Windows and Linux:** desktop companion previews connect to the Pi and provide connection, controller and battery status. Windows and Linux gameplay have been tested; compatibility with all games and systems has not been established.
 - **USB and Bluetooth:** controller input through earlier ReLink development paths has been tested on Linux. The current Pi companion packages are for the Wi-Fi receiver and should not be assumed to provide those paths directly.
-- **Headset audio and microphone:** in development; not available as a finished feature in the current clients.
-- **Updates:** the Pi can retrieve verified releases from GitHub and paired clients can obtain updates from the Pi. The Windows update flow has been tested; the Linux update button and additional recovery scenarios still need testing.
+- **Headset audio:** PC game audio to the controller's headset has been confirmed working on real hardware on both Windows and Linux. It can still occasionally cut out during play or take a while to resume after a controller reconnects; both are known, unresolved issues.
+- **Microphone:** controller-to-PC microphone support is not available in this release. A working version exists in development but needs either a driver signing step we can't yet ask ordinary users to do, or a content bug fixed in its simpler fallback; see [Getting started](GETTING_STARTED.md#known-limitations) for details.
+- **Updates:** the Pi can retrieve verified releases from GitHub and paired clients can obtain updates from the Pi. The Windows update flow has been tested end to end, including the in-app update button; the Linux update button and additional recovery scenarios still need testing.
 
 The previews require a compatible, configured receiver; downloading a client by itself does not set one up. See [Getting started](GETTING_STARTED.md) for what the current packages do and what to expect.
 
